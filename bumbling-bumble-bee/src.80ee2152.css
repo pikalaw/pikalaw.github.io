@@ -1,0 +1,244 @@
+.universe {
+  position: relative;
+  width: 100vmin;
+  height: 100vmin;
+  min-width: 300px;
+  min-height: 300px;
+  margin: auto;
+  background-color: rgba(195, 207, 254, 0.8);
+}
+
+.arrow {
+  width: 0;
+  height: 50%;
+}
+.arrow:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+  background-color: rgba(56, 148, 64, 0.8);
+  transition: background-color 0.5s;
+  content: "^";
+  text-align: center;
+  line-height: 5vmin;
+  width: 13.08996939vmin;
+  height: 5vmin;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 0.6544984695vmin) 100%, 0.6544984695vmin 100%);
+}
+.arrow:hover:after {
+  background-color: #a1f7a8;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-origin: bottom left;
+}
+.arrow-1 {
+  transform: rotate(15deg);
+}
+.arrow-1:hover ~ .bumbling {
+  top: 3.6355603381%;
+  left: 62.4233141649%;
+}
+.arrow-2 {
+  transform: rotate(30deg);
+}
+.arrow-2:hover ~ .bumbling {
+  top: 8.4307806183%;
+  left: 74%;
+}
+.arrow-3 {
+  transform: rotate(45deg);
+}
+.arrow-3:hover ~ .bumbling {
+  top: 16.058874503%;
+  left: 83.941125497%;
+}
+.arrow-4 {
+  transform: rotate(60deg);
+}
+.arrow-4:hover ~ .bumbling {
+  top: 26%;
+  left: 91.5692193817%;
+}
+.arrow-5 {
+  transform: rotate(75deg);
+}
+.arrow-5:hover ~ .bumbling {
+  top: 37.5766858351%;
+  left: 96.3644396619%;
+}
+.arrow-6 {
+  transform: rotate(90deg);
+}
+.arrow-6:hover ~ .bumbling {
+  top: 50%;
+  left: 98%;
+}
+.arrow-7 {
+  transform: rotate(105deg);
+}
+.arrow-7:hover ~ .bumbling {
+  top: 62.4233141649%;
+  left: 96.3644396619%;
+}
+.arrow-8 {
+  transform: rotate(120deg);
+}
+.arrow-8:hover ~ .bumbling {
+  top: 74%;
+  left: 91.5692193817%;
+}
+.arrow-9 {
+  transform: rotate(135deg);
+}
+.arrow-9:hover ~ .bumbling {
+  top: 83.941125497%;
+  left: 83.941125497%;
+}
+.arrow-10 {
+  transform: rotate(150deg);
+}
+.arrow-10:hover ~ .bumbling {
+  top: 91.5692193817%;
+  left: 74%;
+}
+.arrow-11 {
+  transform: rotate(165deg);
+}
+.arrow-11:hover ~ .bumbling {
+  top: 96.3644396619%;
+  left: 62.4233141649%;
+}
+.arrow-12 {
+  transform: rotate(180deg);
+}
+.arrow-12:hover ~ .bumbling {
+  top: 98%;
+  left: 50%;
+}
+.arrow-13 {
+  transform: rotate(195deg);
+}
+.arrow-13:hover ~ .bumbling {
+  top: 96.3644396619%;
+  left: 37.5766858351%;
+}
+.arrow-14 {
+  transform: rotate(210deg);
+}
+.arrow-14:hover ~ .bumbling {
+  top: 91.5692193817%;
+  left: 26%;
+}
+.arrow-15 {
+  transform: rotate(225deg);
+}
+.arrow-15:hover ~ .bumbling {
+  top: 83.941125497%;
+  left: 16.058874503%;
+}
+.arrow-16 {
+  transform: rotate(240deg);
+}
+.arrow-16:hover ~ .bumbling {
+  top: 74%;
+  left: 8.4307806183%;
+}
+.arrow-17 {
+  transform: rotate(255deg);
+}
+.arrow-17:hover ~ .bumbling {
+  top: 62.4233141649%;
+  left: 3.6355603381%;
+}
+.arrow-18 {
+  transform: rotate(270deg);
+}
+.arrow-18:hover ~ .bumbling {
+  top: 50%;
+  left: 2%;
+}
+.arrow-19 {
+  transform: rotate(285deg);
+}
+.arrow-19:hover ~ .bumbling {
+  top: 37.5766858351%;
+  left: 3.6355603381%;
+}
+.arrow-20 {
+  transform: rotate(300deg);
+}
+.arrow-20:hover ~ .bumbling {
+  top: 26%;
+  left: 8.4307806183%;
+}
+.arrow-21 {
+  transform: rotate(315deg);
+}
+.arrow-21:hover ~ .bumbling {
+  top: 16.058874503%;
+  left: 16.058874503%;
+}
+.arrow-22 {
+  transform: rotate(330deg);
+}
+.arrow-22:hover ~ .bumbling {
+  top: 8.4307806183%;
+  left: 26%;
+}
+.arrow-23 {
+  transform: rotate(345deg);
+}
+.arrow-23:hover ~ .bumbling {
+  top: 3.6355603381%;
+  left: 37.5766858351%;
+}
+.arrow-24 {
+  transform: rotate(360deg);
+}
+.arrow-24:hover ~ .bumbling {
+  top: 2%;
+  left: 50%;
+}
+
+.bee {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bee:after {
+  width: 2em;
+  height: 2em;
+  background-color: rgba(148, 148, 56, 0.8);
+  transition: background-color 0.5s;
+  clip-path: circle(50%);
+  padding: 0.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: ":)";
+  text-align: center;
+  line-height: 2em;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.bumbling {
+  transition: top 9s, left 9s;
+}
+.bumbling:hover {
+  transition: top 1s, left 1s;
+}
+
+.arrow:hover ~ .bee:after {
+  content: ":o";
+  background-color: #f7f7a1;
+}
+
+/*# sourceMappingURL=/src.80ee2152.css.map */
