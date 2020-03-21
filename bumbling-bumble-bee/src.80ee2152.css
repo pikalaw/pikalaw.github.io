@@ -230,10 +230,7 @@
 }
 
 .bumbling {
-  transition: top 9s, left 9s;
-}
-.bumbling:hover {
-  transition: top 1s, left 1s;
+  transition: top 3s, left 3s;
 }
 
 .arrow:hover ~ .bee:after {
